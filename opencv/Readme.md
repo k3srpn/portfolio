@@ -40,7 +40,7 @@ contours, _ = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPRO
 contours_image = cv2.drawContours(src, contours, -1, (0,255,0), 3)
 ```
 
-Import한 Image의 배경을 제거하기 위한 알고리즘
+> Import한 Image의 배경을 제거하기 위한 알고리즘 설계
 Contouring 한 이미지는 Contour 값의 좌표가 생성된다.<br><br>
 해당 좌표를 이용해 사각형의 Image를 Crop한다.
 ~~~python
